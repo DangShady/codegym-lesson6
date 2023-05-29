@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a = parseInt(prompt("nhập vào số tiền vay :"));
+        let b = parseInt(prompt("nhập vào lãi suất :"));
+        let c = parseInt(prompt("nhập vào số số năm :"));
+
+        //lãi suất 8% 1 năm
+        let interest = (a * b * c) / 100;
+
+        //tính số tiền phải trả trong n năm
+        let totalAmount = a + interest;
+
+        document.write("Số tiền phải trả sau " + c + " năm là: " + totalAmount + " triệu đồng.")
+    </script>
+</body>
+</html>
