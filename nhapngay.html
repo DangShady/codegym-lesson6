@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+       // Nhập giá trị năm, tháng và ngày từ người dùng
+let year = parseInt(prompt("Nhập vào năm:"));
+let month = parseInt(prompt("Nhập vào tháng (1-12):"));
+let day = parseInt(prompt("Nhập vào ngày (1-31):"));
+
+// Chuyển đổi các giá trị thành chuỗi
+let yearString = year.toString().padStart(4, '0');
+let monthString = month.toString().padStart(2, '0');
+let dayString = day.toString().padStart(2, '0');
+
+// Hiển thị ngày tháng theo định dạng "dd-mm-yyyy"
+console.log(dayString + "-" + monthString + "-" + yearString);
+alert(dayString + "-" + monthString + "-" + yearString);
+document.write(dayString + "-" + monthString + "-" + yearString)
+    </script>
+</body>
+
+</html>
